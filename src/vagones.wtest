@@ -1,0 +1,23 @@
+import Vagones.*
+
+describe "Test de Vagones Pasajeros"{
+	const vp1 = new VagonDePasajeros(ancho=2, largo= 10, tieneBanio = false)
+	const vp2 = new VagonDePasajeros(ancho=4, largo= 10, estaOrdenado = false)
+	test "vagones primer ejemplo"{
+		assert.equals(80, vp1.cantidadDePasajeros())
+	}
+	test "agones segundo ejemplo"{
+		assert.equals(85, vp2.cantidadDePasajeros())
+	}
+	test "ejemplo banios"{
+		assert.equals(800, vp1.cantMaximaCarga())
+	}
+	test "ejemplo banios segundo ej"{
+		assert.equals(300, vp2.cantMaximaCarga())
+	}
+}
+
+describe "Test de Vagones Carga"{
+	const vp3 = new VagonDePasajeros(ancho=2, largo= 10, tieneBanio = false)
+	const vp4 = new VagonDePasajeros(ancho=4, largo= 10, estaOrdenado = false)
+}
